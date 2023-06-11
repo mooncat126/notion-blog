@@ -1,0 +1,38 @@
+{
+  "name": "nuxt-portfolio-dev",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "yarn lint:js"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/color-mode": "^2.0.0",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "core-js": "^3.15.2",
+    "encoding": "^0.1.13",
+    "nuxt": "^2.15.7",
+    "prismjs": "^1.29.0"
+  },
+  "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@babel/eslint-parser": "^7.15.4",
+    "@nuxtjs/eslint-config": "^7.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^7.12.1",
+    "postcss": "^8.4.6",
+    "prettier": "^2.4.1",
+    "vue-notion": "^1.5.1"
+  }
+}
