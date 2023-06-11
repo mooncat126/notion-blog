@@ -21,7 +21,7 @@ https://xyu.house/
 - 生成站点地图（访问 /sitemap.xml）
 - 一键部署到 netlify
 
-## 先决条件
+## 准备工作
 
 创建 Notion 账户
 点击页面顶部的`duplicate`按钮复制此模板。
@@ -36,7 +36,7 @@ https://xyu.house/
 对于 about 页面的 ID 也执行同样的操作（我们将把它作为环境变量 NOTION_ABOUT_PAGE_ID）
 获取你的 Google 分析 ID（可选）
 
-## 构建设置
+## 设置
 
 创建一个 `.env` 文件，并填入以下变量
 
@@ -61,10 +61,11 @@ https://xyu.house/
 $ yarn install
 ```
 
-## 在 localhost:3000 以热重载方式运行
+## 在localhost:3000运行
 
 ```
 $ yarn dev
 ```
-
-最后你可以填写 netlify 表格,并点击部署按钮进行发布。
+## 部署
+最后你可以按.env的内容填写 netlify 表格,并点击部署按钮进行发布。
+https://www.netlify.com/
