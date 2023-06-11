@@ -51,12 +51,12 @@ create a `.env` file with the following variables
 
 then you can try to run it.
 
-# install dependencies
+## install dependencies
 ```
 $ yarn install
 ```
 
-# serve with hot reload at localhost:3000
+## serve with hot reload at localhost:3000
 ```
 $ yarn dev
 ```
