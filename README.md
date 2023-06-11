@@ -1,4 +1,4 @@
-[English](README.md) | [中文](README.zh.md)
+[English](README.md) | [中文](README_zh.md)
 
 # notion-blog
 This is an example Next.js project that shows Nuxt.js' support using Notion's private API for a backend.
