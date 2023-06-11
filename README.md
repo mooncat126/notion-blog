@@ -39,17 +39,17 @@ now you can click to the deploy button and fill the netlify form
 create a `.env` file with the following variables
 
 - BASE_URL=[your domain]
-- GOOGLE_ANALYTICS_ID= [xxxxx]
-- NOTION_TABLE_ID="[xxxxx]"
-- NOTION_ABOUT_PAGE_ID="[xxxxx]"
-- GITHUB_USERNAME="[xxxxx]"
-- DEV_LOGO="[xxxxx]"
-- DEV_NAME="[xxxxx]"
-- DEV_DESCRIPTION="some text"
-- DEV_ROLE="Engineer"
-- DEV_GITHUB_LINK="https://github.com/[xxx]"
-- DEV_TWITTER_LINK="https://twitter.com/[xxx]"
-- DEV_LINKEDIN_LINK="https://www.linkedin.com/in/[xxx]/"
+- GOOGLE_ANALYTICS_ID
+- NOTION_TABLE_ID
+- NOTION_ABOUT_PAGE_ID
+- GITHUB_USERNAME
+- DEV_LOGO
+- DEV_NAME
+- DEV_DESCRIPTION
+- DEV_ROLE
+- DEV_GITHUB_LINK
+- DEV_TWITTER_LINK
+- DEV_LINKEDIN_LINK
 
 then you can try to run it.
 
