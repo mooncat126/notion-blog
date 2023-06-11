@@ -1,9 +1,7 @@
 [English](README.md) | [中文](README_zh.md)
 
 # notion-blog
-
-这是一个示例的 Nuxt.js 项目，展示了 Nuxt.js 使用 Notion 的私有 API 作为后端的支持。
-可部署至 netlify。
+这是一个示例的 Nuxt.js 个人博客项目， 使用了 Notion 的私有 API 作为后端的支持。可部署至 netlify。
 
 ## 预览
 
