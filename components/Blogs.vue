@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16">
+  <div class="mt-20">
     <div
       class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300"
     >
@@ -65,6 +65,8 @@
         </div>
       </div>
     </div>
+
+    <TagList :tagList="tagList" />
 
     <nav class="wrapper-small my-5">
       <ul class="inline-flex items-center -space-x-px">
@@ -135,6 +137,12 @@ export default {
       default: "Blogs",
     },
     posts: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+    tagList: {
       type: Array,
       default() {
         return [];

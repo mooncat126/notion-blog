@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20">
+  <div class="mt-10 mb-10">
     <div
       class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300"
     >
@@ -7,6 +7,7 @@
     </div>
 
     <div class="wrapper-small my-5">
+      <span class="font-semibold mr-5">All Tags:</span>
       <span
         v-for="tag in tagList"
         :key="tag"
@@ -23,7 +24,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Blogs",
+      default: "",
     },
     tagList: {
       type: Array,

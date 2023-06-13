@@ -4,9 +4,9 @@
       <Hero />
     </div>
 
-    <Blogs :posts="posts" title="Featured Blogs" />
+    <Blogs :posts="posts" title="My Blogs" :tagList="tagList" />
     <Projects :projects="projects" title="My Github Projects" />
-    <TagList :tagList="tagList" title="All Tags" />
+    <Contact title="Contact Me" />
   </div>
 </template>
 
