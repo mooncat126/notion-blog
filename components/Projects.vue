@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16">
+  <div class="mt-20">
     <div
       class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300"
     >
@@ -42,10 +42,10 @@
             </ul>
           </div>
         </a>
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-end">
           <a
             class="bg-black w-full md:w-auto flex items-center justify-center px-10 md:px-24 py-3 shadow-md hover:bg-gray-800 rounded-lg text-white"
-            href="https://github.com/aymaneMx"
+            :href="$config.devGithubLink"
             rel="noreferrer"
             target="_blank"
           >
