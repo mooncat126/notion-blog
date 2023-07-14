@@ -60,6 +60,7 @@ export default {
 
   build: {},
   colorMode: {
+    preference: 'dark',
     classSuffix: ''
   },
 
