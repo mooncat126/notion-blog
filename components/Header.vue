@@ -11,8 +11,9 @@
         </div>
 
         <div class="flex flex-row">
-          <nuxt-link class="nav-link" to="/posts">Home</nuxt-link>
-          <nuxt-link class="nav-link" to="/about">About</nuxt-link>
+          <nuxt-link class="nav-link" id="home" to="/">Home</nuxt-link>
+          <nuxt-link class="nav-link" id="blogs" to="/posts">Blogs</nuxt-link>
+          <nuxt-link class="nav-link" id="about" to="/about">About</nuxt-link>
           <ColorSwitcher />
         </div>
       </div>

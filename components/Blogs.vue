@@ -65,13 +65,22 @@
         </div>
       </div>
     </div>
+    <nuxt-link
+      id="moreBlogs"
+      v-if="!showDetail"
+      :to="`/posts`"
+      class="wrapper-small text-xl text-base font-semibold text-gray-700 dark:text-gray-200 my-3 hover:text-primary"
+    >
+      more blogs>
+    </nuxt-link>
 
-    <TagList :tagList="tagList" />
+    <TagList v-if="showDetail" :tagList="tagList" />
 
-    <nav class="wrapper-small my-5">
+    <nav v-if="showDetail" class="wrapper-small my-5">
       <ul class="inline-flex items-center -space-x-px">
         <li>
           <button
+            id="prevPage"
             class="block px-4 py-3 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             @click="prevPage()"
           >
@@ -93,6 +102,7 @@
         </li>
         <li v-for="page in visiblePageNumbers" :key="page">
           <button
+            id="page"
             class="px-4 py-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-primary"
             :class="{
               'text-blue-600 border-blue-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-primary':
@@ -105,6 +115,7 @@
         </li>
         <li>
           <button
+            id="nextPage"
             class="block px-4 py-3 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-primary"
             @click="nextPage()"
           >
@@ -132,6 +143,10 @@
 <script>
 export default {
   props: {
+    showDetail: {
+      type: Boolean,
+      default: false,
+    },
     title: {
       type: String,
       default: "Blogs",

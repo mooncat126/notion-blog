@@ -3,6 +3,7 @@
     class="wrapper flex flex-wrap text-base text-center m-3 dark:bg-gray-900 text-gray-800 dark:text-gray-200"
   >
     <a
+      id="moreGithub"
       aria-label="Github"
       class="social-link hover:text-primary mx-3"
       :href="$config.devGithubLink"
@@ -11,6 +12,7 @@
     </a>
 
     <a
+      id="Twitter"
       aria-label="Twitter"
       class="social-link hover:text-primary mx-3"
       :href="$config.devTwitterLink"

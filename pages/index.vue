@@ -4,7 +4,7 @@
       <Hero />
     </div>
 
-    <Blogs :posts="posts" title="My Blogs" :tagList="tagList" />
+    <Blogs :posts="posts" title="Blogs" :show-detail="false" />
     <Projects :projects="projects" title="My Github Projects" />
     <Contact title="Contact Me" />
   </div>

@@ -1,15 +1,15 @@
 <template>
   <div class="flex flex-col h-screen justify-between dark:bg-gray-900">
     <div class="dark:bg-gray-900">
-      <Header/>
+      <Header />
     </div>
 
     <div class="mb-auto dark:bg-gray-900">
-      <Nuxt/>
+      <Nuxt />
     </div>
 
     <div class="dark:bg-gray-900">
-      <Footer/>
+      <Footer />
     </div>
   </div>
 </template>
@@ -25,5 +25,15 @@
 
 .flex-center {
   @apply flex justify-center items-center;
+}
+
+#waifu-toggle {
+  background-color: #2563eb;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#waifu-toggle.waifu-toggle-active {
+  margin-left: -30px;
 }
 </style>

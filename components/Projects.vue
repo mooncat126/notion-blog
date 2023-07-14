@@ -13,7 +13,7 @@
           :key="index"
           :href="project.html_url"
           class="block bg-gray-50 dark:bg-gray-800 p-6 shadow rounded-lg mt-2 lg:mt-0"
-          rel="noreferrer"
+          rel="github_content"
           target="_blank"
         >
           <div>
@@ -44,6 +44,7 @@
         </a>
         <div class="flex items-center justify-end">
           <a
+            id="moreGithub"
             class="bg-black w-full md:w-auto flex items-center justify-center px-10 md:px-24 py-3 shadow-md hover:bg-gray-800 rounded-lg text-white"
             :href="$config.devGithubLink"
             rel="noreferrer"
