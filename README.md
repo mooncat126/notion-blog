@@ -10,12 +10,12 @@ https://xyu.house/
 ## Features
 
 ### User Interface Features
-- Dark/light mode support.
-- Renders blogs directly from Notion.
-- Search and tag functionality for blogs.
-- Displays Github projects.
-- Brief contact form.
-- Cute live2D character with EN, ZH, JP support.
+- 🌤️ Dark/light mode support. 
+- 📖 Renders blogs directly from Notion.
+- 🔎 Search and tag functionality for blogs.
+- 💻 Displays Github projects.
+- 📫 Brief contact form.
+- 👧 Cute live2D character with EN, ZH, JP support.
 
 ### Technical and Design Features
 - Clean, minimalistic portfolio design.
