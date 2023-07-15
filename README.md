@@ -9,15 +9,21 @@ https://xyu.house/
 
 ## Features
 
-- minimal and clean portfolio
-- the dark/light mode (Auto detect the system color-mode)
-- responsive (tablet & mobile friendly)
-- render articles from Notion 🚀
-- fetches your Github pinned projects with most stars
-- Eslint & Prettier configured
-- google analytics integration
-- generate sitemap (visit /sitemap.xml)
-- one click deployment to netlify
+### User Interface Features
+- Dark/light mode support.
+- Renders blogs directly from Notion.
+- Search and tag functionality for blogs.
+- Displays Github projects.
+- Brief contact form.
+- Cute live2D character with EN, ZH, JP support.
+
+### Technical and Design Features
+- Clean, minimalistic portfolio design.
+- Fully responsive for all devices.  
+- Configured with Eslint & Prettier.
+- Google Analytics integrated.
+- Generates sitemap at /sitemap.xml.
+
 
 ## Prerequisites
 create Notion account
@@ -38,21 +44,22 @@ now you can click to the deploy button and fill the netlify form
 ## Build Setup
 create a `.env` file with the following variables
 
-- BASE_URL=[your domain]
-- GOOGLE_ANALYTICS_ID
-- NOTION_TABLE_ID
-- NOTION_ABOUT_PAGE_ID
-- GITHUB_USERNAME
-- DEV_LOGO
-- DEV_NAME
-- DEV_DESCRIPTION
-- DEV_ROLE
-- DEV_GITHUB_LINK
-- DEV_TWITTER_LINK
-- DEV_LINKEDIN_LINK
+```
+BASE_URL=<your_base_url>
+GOOGLE_ANALYTICS_ID=<your_google_analytics_id>
+NOTION_TABLE_ID=<your_notion_table_id>
+NOTION_ABOUT_PAGE_ID=<your_notion_about_page_id>
+GITHUB_USERNAME=<your_github_username>
+DEV_LOGO=<your_dev_logo>
+DEV_NAME=<your_dev_name>
+DEV_DESCRIPTION=<your_dev_description>
+DEV_ROLE=<your_dev_role>
+DEV_GITHUB_LINK=<your_dev_github_link>
+DEV_TWITTER_LINK=<your_dev_twitter_link>
+DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
+```
 
-then you can try to run it.
-
+then you can try to run it. 
 ## install dependencies
 ```
 $ yarn install
