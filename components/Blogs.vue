@@ -1,7 +1,8 @@
 <template>
-  <div class="mt-20">
+  <div class="mt-0">
+    <SearchInput v-if="showDetail" class="wrapper-small" :posts="posts" />
     <div
-      class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300"
+      class="flex justify-center items-center text-base font-semibold text-gray-600 my-10 dark:text-gray-300"
     >
       <h2 class="text-center text-xl">{{ title }}</h2>
     </div>
@@ -185,24 +186,20 @@ export default {
     visiblePageNumbers() {
       let start = this.currentPage - Math.floor(this.maxVisiblePages / 2);
       let end = this.currentPage + Math.floor(this.maxVisiblePages / 2);
-
       // Ensure start is not less than 1
       if (start < 1) {
         end += 1 - start;
         start = 1;
       }
-
       // Ensure end is not more than totalPages
       if (end > this.totalPages) {
         start -= end - this.totalPages;
         end = this.totalPages;
       }
-
       // Ensure start is not less than 1 after adjusting the end
       if (start < 1) {
         start = 1;
       }
-
       return Array.from(
         { length: end - start + 1 },
         (_, index) => start + index
