@@ -26,20 +26,22 @@ https://xyu.house/
 
 
 ## Prerequisites
-create Notion account
-duplicate the following template by clicking on "duplicate" button located at the top of the page.
+1. create Notion account
+
+2. duplicate the following template by clicking on `"duplicate"` button located at the top of the page.
 - https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=c7483b41c8c34d77aed83c36bf500089
 
-make your notion table public (by clicking on "share" button located at the top of the page)
+3. make your notion table public (by clicking on "share" button located at the top of the page)
 
-grab the table id from the table link: eg:
-
+4.grab the table id from the table link: eg:
 - link: https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=18afdb78dc8e4e03a727e994ac205a74
 - id: 449c4b42aeb7409e9c02405c45d9f519
 
-do the same thing for about page id (we gonna use it as an env variable NOTION_ABOUT_PAGE_ID)
-get your Google analytics id (optional)
-now you can click to the deploy button and fill the netlify form
+5. do the same thing for about page id (we gonna use it as an env variable `NOTION_ABOUT_PAGE_ID`)
+
+6. get your Google analytics id (optional)
+   
+now you can run it or deploy it in your server.
 
 
 ## Build Setup
