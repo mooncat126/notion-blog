@@ -10,12 +10,12 @@ https://xyu.house/
 ## 特性
 
 ### 用户界面特性
-- 支持日/夜切换模式。
-- 直接从Notion渲染博客。
-- 博客的搜索和标签功能。
-- 展示Github项目。
-- 简洁的联系表单。
-- 支持EN，ZH，JP的可爱live2D角色。
+- 🌤️ 支持日/夜切换模式。
+- 📖 直接从Notion渲染博客。
+- 🔎 博客的搜索和标签功能。
+- 💻 展示Github项目。
+- 📫 简洁的联系表单。
+- 👧 支持EN，ZH，JP的可爱live2D角色。
 
 ### 技术和设计特性
 - 清爽，极简的UI设计。
@@ -25,23 +25,24 @@ https://xyu.house/
 - 自动生成网站地图。
 
 ## 准备工作
-创建Notion账户
+1. 创建Notion账户
 
-点击页面顶部的 "duplicate" 按钮复制下面的模板。
-https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=c7483b41c8c34d77aed83c36bf500089
+2. 点击页面顶部的` "duplicate" `按钮复制下面的模板。
+- https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=c7483b41c8c34d77aed83c36bf500089
 
-使你的Notion表格公开（点击页面顶部的 "share" 按钮）
+3. 使你的Notion表格公开（点击页面顶部的 "share" 按钮）
 
-从表格链接中获取表格id，例如：
-
+4. 从表格链接中获取表格id，例如：
 - 链接：https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=18afdb78dc8e4e03a727e994ac205a74
 - id：449c4b42aeb7409e9c02405c45d9f519
 
-为关于页面id做同样的操作（我们会把它作为环境变量 NOTION_ABOUT_PAGE_ID）
-获取你的Google analytics id（可选）
+5. 相同步骤设置About页面id（我们会把它作为环境变量 `NOTION_ABOUT_PAGE_ID`）
 
+6. 获取你的Google analytics id（可选）
 
-## 构建设置
+现在你可以进行下一步了。:)
+
+## 设置环境参数
 创建一个`.env`文件，包含以下变量
 
 ```
@@ -59,7 +60,7 @@ DEV_TWITTER_LINK=<your_dev_twitter_link>
 DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
 ```
 
-然后你可以尝试运行它。 
+然后你可以尝试运下面的步骤运行它。
 
 ## 安装依赖
 ```
