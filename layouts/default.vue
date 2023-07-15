@@ -28,12 +28,12 @@
 }
 
 #waifu-toggle {
-  background-color: #2563eb;
-  padding: 10px;
-  font-size: 13px;
+  background-color: #2563eb !important;
+  padding: 10px !important;
+  font-size: 13px !important;
 }
 
 #waifu-toggle.waifu-toggle-active {
-  margin-left: -30px;
+  margin-left: -20px !important;
 }
 </style>

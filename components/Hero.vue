@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex h-full text-center text-gray-700 dark:text-gray-200 m-8"
-  >
+  <div class="flex h-full text-center text-gray-700 dark:text-gray-200 m-8">
     <div class="m-auto">
       <h1
         class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
