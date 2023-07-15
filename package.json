@@ -16,6 +16,7 @@
     "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.15.2",
     "encoding": "^0.1.13",
+    "fuse.js": "^6.6.2",
     "nuxt": "^2.15.7",
     "prismjs": "^1.29.0"
   },
