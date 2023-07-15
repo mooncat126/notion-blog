@@ -33,7 +33,7 @@ https://xyu.house/
 
 3. make your notion table public (by clicking on "share" button located at the top of the page)
 
-4.grab the table id from the table link: eg:
+4. grab the table id from the table link: eg:
 - link: https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=18afdb78dc8e4e03a727e994ac205a74
 - id: 449c4b42aeb7409e9c02405c45d9f519
 
