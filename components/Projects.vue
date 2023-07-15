@@ -35,10 +35,6 @@
                 ></span>
                 <span>{{ project.language }}</span>
               </li>
-              <li v-if="project.forks" class="inline-flex items-center">
-                <IconFork class="h-4 w-4 mr-1" />
-                <span>{{ project.forks }}</span>
-              </li>
             </ul>
           </div>
         </a>
