@@ -1,69 +1,72 @@
 [English](README.md) | [中文](README_zh.md)
 
-# notion-blog
-这是一个示例的 Nuxt.js 个人博客项目， 使用了 Notion 的私有 API 作为后端的支持。可部署至 netlify。
+# Notion博客
+这是一个示例Next.js项目，展示了Nuxt.js使用Notion私有API作为后端的支持。
+可以部署到netlify。
 
 ## 预览
-
 https://xyu.house/
 
 ## 特性
 
-- 简洁版的功能组合
-- 日/夜模式（自动检测系统颜色模式）
-- 响应式（适配平板和手机）
-- 从 Notion 渲染文章 🚀
-- 获取你在 Github 上的项目信息
-- 配置了 Eslint 和 Prettier
-- 集成 Google 分析
-- 生成站点地图（访问 /sitemap.xml）
-- 一键部署到 netlify
+### 用户界面特性
+- 支持日/夜切换模式。
+- 直接从Notion渲染博客。
+- 博客的搜索和标签功能。
+- 展示Github项目。
+- 简洁的联系表单。
+- 支持EN，ZH，JP的可爱live2D角色。
+
+### 技术和设计特性
+- 清爽，极简的UI设计。
+- 完全响应式。
+- 已配置Eslint和Prettier。
+- 集成Google Analytics。
+- 自动生成网站地图。
 
 ## 准备工作
+创建Notion账户
 
-创建 Notion 账户
-点击页面顶部的`duplicate`按钮复制此模板。
+点击页面顶部的 "duplicate" 按钮复制下面的模板。
+https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=c7483b41c8c34d77aed83c36bf500089
 
-使你的 notion 表格公开（通过点击页面顶部的`share`按钮）
+使你的Notion表格公开（点击页面顶部的 "share" 按钮）
 
-从表格链接获取表格 ID，例如：
+从表格链接中获取表格id，例如：
 
 - 链接：https://www.notion.so/xyblog/449c4b42aeb7409e9c02405c45d9f519?v=18afdb78dc8e4e03a727e994ac205a74
-- ID：449c4b42aeb7409e9c02405c45d9f519
+- id：449c4b42aeb7409e9c02405c45d9f519
 
-对于 about 页面的 ID 也执行同样的操作（我们将把它作为环境变量 NOTION_ABOUT_PAGE_ID）
-获取你的 Google 分析 ID（可选）
+为关于页面id做同样的操作（我们会把它作为环境变量 NOTION_ABOUT_PAGE_ID）
+获取你的Google analytics id（可选）
 
-## 设置
 
-创建一个 `.env` 文件，并填入以下变量
+## 构建设置
+创建一个`.env`文件，包含以下变量
 
-- BASE_URL=[your domain]
-- GOOGLE_ANALYTICS_ID
-- NOTION_TABLE_ID
-- NOTION_ABOUT_PAGE_ID
-- GITHUB_USERNAME
-- DEV_LOGO
-- DEV_NAME
-- DEV_DESCRIPTION
-- DEV_ROLE
-- DEV_GITHUB_LINK
-- DEV_TWITTER_LINK
-- DEV_LINKEDIN_LINK
+```
+BASE_URL=<your_base_url>
+GOOGLE_ANALYTICS_ID=<your_google_analytics_id>
+NOTION_TABLE_ID=<your_notion_table_id>
+NOTION_ABOUT_PAGE_ID=<your_notion_about_page_id>
+GITHUB_USERNAME=<your_github_username>
+DEV_LOGO=<your_dev_logo>
+DEV_NAME=<your_dev_name>
+DEV_DESCRIPTION=<your_dev_description>
+DEV_ROLE=<your_dev_role>
+DEV_GITHUB_LINK=<your_dev_github_link>
+DEV_TWITTER_LINK=<your_dev_twitter_link>
+DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
+```
 
-然后你可以尝试运行它。
+然后你可以尝试运行它。 
 
 ## 安装依赖
-
 ```
 $ yarn install
 ```
 
-## 在localhost:3000运行
-
+## 启动预览 localhost:3000 
 ```
 $ yarn dev
 ```
-## 部署
-最后你可以按.env的内容填写 netlify 表格,并点击部署按钮进行发布。
-https://www.netlify.com/
