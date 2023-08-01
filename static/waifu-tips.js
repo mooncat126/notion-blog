@@ -69,7 +69,7 @@
           "代码即诗。",
           "Talk is cheap, Show me the code。",
           "生命短暂, 我用JS。",
-          ];
+        ];
 
         // 随机选择一条消息
         const randomIndex = Math.floor(Math.random() * messages.length);
@@ -77,6 +77,39 @@
 
         // 使用选择的消息
         o(randomMessage, 6e3, 9);
+      },
+    },
+    JP: {
+      icon: '<svg viewBox="0 0 25 25"><text x="0" y="15" font-weight="bold">JP</text></svg>',
+      callback: () => {
+        document.getElementById("waifu").remove();
+        document.getElementById("waifu-toggle").remove();
+        window.initWidget({
+          waifuPath: "./waifu-tips-jp.json",
+          cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+        });
+      },
+    },
+    EN: {
+      icon: '<svg viewBox="0 0 25 25"><text x="0" y="15" font-weight="bold">EN</text></svg>',
+      callback: () => {
+        document.getElementById("waifu").remove();
+        document.getElementById("waifu-toggle").remove();
+        window.initWidget({
+          waifuPath: "./waifu-tips-en.json",
+          cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+        });
+      },
+    },
+    ZH: {
+      icon: '<svg viewBox="0 0 25 25"><text x="0" y="15" font-weight="bold">ZH</text></svg>',
+      callback: () => {
+        document.getElementById("waifu").remove();
+        document.getElementById("waifu-toggle").remove();
+        window.initWidget({
+          waifuPath: "./waifu-tips-zh.json",
+          cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+        });
       },
     },
     quit: {
@@ -164,10 +197,9 @@
             ((o = (o = e(o)).replace("{year}", s.getFullYear())), i.push(o));
         });
       const c = () => {};
-      console.log("%c", c),
-        (c.toString = () => {
-          o(t.message.console, 6e3, 9);
-        }),
+      (c.toString = () => {
+        o(t.message.console, 6e3, 9);
+      }),
         window.addEventListener("copy", () => {
           o(t.message.copy, 6e3, 9);
         }),
@@ -185,7 +217,7 @@
         document.getElementById("waifu").style.bottom = 0;
       }, 0),
       (function () {
-          Array.isArray(t.tools) || (t.tools = Object.keys(n));
+        Array.isArray(t.tools) || (t.tools = Object.keys(n));
         for (let e of t.tools)
           if (n[e]) {
             const { icon: t, callback: o } = n[e];
@@ -203,7 +235,7 @@
       (function () {
         let e = localStorage.getItem("modelId"),
           o = localStorage.getItem("modelTexturesId");
-        null === e && ((e = 1), (o = 53)),
+        null === e && ((e = 0), (o = 53)),
           i.loadModel(e, o),
           fetch(t.waifuPath)
             .then((e) => e.json())
@@ -211,11 +243,11 @@
       })();
   }
   window.initWidget = function (e, t) {
-    "string" == typeof e && (e = { waifuPath: e, apiPath: t }),
-      document.body.insertAdjacentHTML(
-        "beforeend",
-        '<div id="waifu-toggle">\n            <span>看板娘</span>\n        </div>'
-      );
+    "string" == typeof e && (e = { waifuPath: e, apiPath: t }), console.log(e);
+    document.body.insertAdjacentHTML(
+      "beforeend",
+      '<div id="waifu-toggle">\n            <span>看板娘</span>\n        </div>'
+    );
     const o = document.getElementById("waifu-toggle");
     o.addEventListener("click", () => {
       o.classList.remove("waifu-toggle-active"),

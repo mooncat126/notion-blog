@@ -1,0 +1,313 @@
+{
+  "mouseover": [
+    {
+      "selector": "#live2d",
+      "text": [
+        "What are you doing? Take your hand away!",
+        "Mouse...mouse placed in the wrong place!",
+        "What are you going to do?",
+        "Meow meow meow?",
+        "Do you want to chat with me?",
+        "Click the button on the right to chat with me.",
+        "Don't touch me.",
+        "..."
+      ]
+    },
+    {
+      "selector": "#waifu-tool-hitokoto",
+      "text": [
+        "Guess what I'm going to say?",
+        "Do you want to hear my life experience?"
+      ]
+    },
+    {
+      "selector": "#waifu-tool-quit",
+      "text": [
+        "Is it time to say goodbye?",
+        "Boohoo QAQ See you later...",
+        "Don't abandon me...",
+        "Will we...see each other again...",
+        "Hmph, you'll regret it!"
+      ]
+    },
+    {
+      "selector": "#home",
+      "text": [
+        "Click to go to the homepage.",
+        "Click it to go back to the homepage!",
+        "Go check out the homepage."
+      ]
+    },
+    {
+      "selector": "#about",
+      "text": [
+        "Do you want to know who my owner is?",
+        "There are some secrets about my owner here, do you want to take a look?",
+        "Congratulations on discovering where my owner hangs out!"
+      ]
+    },
+    {
+      "selector": "#blogs",
+      "text": ["Click to see all articles!", "Quick, check out what's here?"]
+    },
+    {
+      "selector": "#switchColorMode",
+      "text": [
+        "You can switch the day and night mode.",
+        "Click to change the blog's background color!"
+      ]
+    },
+    {
+      "selector": ".site-author",
+      "text": ["Is my owner good-looking?", "This is my owner (*´∇｀*)"]
+    },
+    {
+      "selector": ".cc-opacity, .post-copyright-author",
+      "text": [
+        "Remember to comply with the rules when re-posting.",
+        "All articles are licensed under CC BY-NC-SA 4.0.",
+        "Be aware of the article's copyright before reposting."
+      ]
+    },
+    {
+      "selector": ".links-of-author",
+      "text": [
+        "This is where the owner usually is.",
+        "Here are the owner's contact details!"
+      ]
+    },
+    {
+      "selector": "#contact-submit",
+      "text": ["I will reply to the email in time!", "Click to send an email~"]
+    },
+    {
+      "selector": "a[href^='/tags/']",
+      "text": [
+        "Do you want to see the <span>{text}</span> tag?",
+        "Click it to see all the articles under this tag!"
+      ]
+    },
+    {
+      "selector": "a[href^='/categories/']",
+      "text": [
+        "Do you want to see the <span>{text}</span> category?",
+        "Click it to see all the articles under this category!"
+      ]
+    },
+    {
+      "selector": ".project-card",
+      "text": ["Do you want to check out this article?"]
+    },
+    {
+      "selector": ".back-to-top",
+      "text": [
+        "Click it to go back to the top!",
+        "Back to the very beginning~",
+        "Do you want to go back to the start?"
+      ]
+    },
+    {
+      "selector": "#page",
+      "text": "Jump to page {text}!"
+    },
+    {
+      "selector": "#moreBlogs",
+      "text": ["Click to see more articles~"]
+    },
+    {
+      "selector": "#allTags",
+      "text": ["These are the categories of all articles..."]
+    },
+    {
+      "selector": "#moreGithub",
+      "text": ["GoGoGo Github~", "Start the journey to Github~"]
+    },
+    {
+      "selector": "#Twitter",
+      "text": [
+        "Look at you...you've found the owner's Twitter",
+        "Let's add a Twitter friend~"
+      ]
+    },
+    {
+      "selector": "#nextPage",
+      "text": [
+        "Go check out the next page.",
+        "Click it to go forward!",
+        "Do you want to flip to the next page?"
+      ]
+    },
+    {
+      "selector": "#prevPage",
+      "text": [
+        "Go check out the previous page.",
+        "Click it to go back!",
+        "Do you want to flip to the previous page?"
+      ]
+    },
+    {
+      "selector": "#fullName",
+      "text": ["How should I address you?", "Leave your name!"]
+    },
+    {
+      "selector": "#email",
+      "text": ["Leave your email~", "Don't enter the wrong email address..."]
+    },
+    {
+      "selector": "#Message",
+      "text": [
+        "Write a message to tell me what you want to dream tonight~",
+        "Do you want to say something?"
+      ]
+    },
+    {
+      "selector": "#Message",
+      "text": [
+        "Write a letter and tell me ~ what do you want to dream about tonight ~",
+        "Do you want to say something?",
+        "Do you like the blog? Leave a message and chat with the host!"
+      ]
+    },
+    {
+      "selector": "#search",
+      "text": [
+        "Enter to search for article titles.."
+      ]
+    },
+    {
+      "selector": "#contact-submit",
+      "text": [
+        "Be responsible for your own comments ~",
+        "Are you submitting? Please wait patiently for the reply ~"
+      ]
+    },
+    {
+      "selector": "a[rel='github_content']",
+      "text": ["Hey, would you like to visit my master's Github?"]
+    }
+  ],
+  "click": [
+    {
+      "selector": "#live2d",
+      "text": [
+        "Is...is it an accident...",
+        "Do you know what a Lolita complex is?",
+        "I will call the police if you touch me again!⌇●﹏●⌇",
+        "Don't touch me, or I will tell my wife to hit you!",
+        "Why are you touching me! Be careful, I will bite you!",
+        "Don't touch me, there's nothing good about it!"
+      ]
+    },
+    {
+      "selector": "#contact-submit",
+      "text": [
+        "What do you want to say?",
+        "Please fill it out carefully ~",
+        "Do you have something to say?"
+      ]
+    }
+  ],
+  "seasons": [
+    {
+      "date": "01/01",
+      "text": "<span>New Year's Day</span> is here, the new year has begun, this year is {year} ~"
+    },
+    {
+      "date": "02/14",
+      "text": "Another year's <span>Valentine's Day</span>, did you find a partner in {year} ~"
+    },
+    {
+      "date": "03/08",
+      "text": "Today is <span>International Women's Day</span>!"
+    },
+    {
+      "date": "03/12",
+      "text": "Today is <span>Arbor Day</span>, we should protect the environment!"
+    },
+    {
+      "date": "04/01",
+      "text": "Let me tell you a secret ~ <span>Today is April Fool's Day, don't be fooled ~</span>"
+    },
+    {
+      "date": "05/01",
+      "text": "Today is <span>International Labor Day</span>, have you planned where to go on holiday ~"
+    },
+    {
+      "date": "06/01",
+      "text": "<span>Children's Day</span> is here, happy times are always short, wouldn't it be great if we never grew up…"
+    },
+    {
+      "date": "09/03",
+      "text": "<span>China's Victory Day over Japanese Aggression</span>, remember history, commemorate martyrs, cherish peace, and create the future."
+    },
+    {
+      "date": "09/10",
+      "text": "<span>Teacher's Day</span>, say hello to your teachers at school ~"
+    },
+    {
+      "date": "10/01",
+      "text": "<span>National Day</span> is here, celebrate for our motherland!"
+    },
+    {
+      "date": "11/05-11/12",
+      "text": "Who did you spend this year's <span>Double Eleven</span> with ~"
+    },
+    {
+      "date": "12/20-12/31",
+      "text": "These days are <span>Christmas</span>, you must have gone shopping again ~"
+    }
+  ],
+  "time": [
+    {
+      "hour": "6-7",
+      "text": "Good Morning ~"
+    },
+    {
+      "hour": "8-11",
+      "text": "Is your work going well, take a break!"
+    },
+    {
+      "hour": "12-13",
+      "text": "Lunch Time, it's lunchtime!"
+    },
+    {
+      "hour": "14-17",
+      "text": "It's easy to get sleepy in the afternoon..."
+    },
+    {
+      "hour": "18-19",
+      "text": "It's evening! Nothing is more beautiful than the sunset ~"
+    },
+    {
+      "hour": "20-21",
+      "text": "Good evening, how was your day?"
+    },
+    {
+      "hour": "22-23",
+      "text": [
+        "It's so late...",
+        "Take care of your eyes at night!",
+        "Go to bed early, good night ~"
+      ]
+    },
+    {
+      "hour": "0-5",
+      "text": [
+        "Meow ~ I caught a night owl ~",
+        "Let me tell you a secret, I'm a night owl too ~"
+      ]
+    }
+  ],
+  "message": {
+    "default": [
+      "Long time no see ~",
+      "Ying Ying Ying...",
+      "I will destroy you on behalf of the moon!",
+      "Hey ~ come and play with me!",
+      "Would you consider collecting me ~"
+    ],
+    "console": "Haha, you opened the console, do you want to see my little secret?",
+    "copy": "What have you copied? Remember to add the source when reposting!",
+    "visibilitychange": "Wow, it's nice to see you ~"
+  }
+}
