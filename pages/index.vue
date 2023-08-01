@@ -26,23 +26,15 @@ export default {
           "&sort=language&per_page=3"
       )
       .catch((errors) => {
-        // console.log(errors)
+        console.log(errors);
       });
+
     const pageTable = await $notion.getPageTable(notionTableId);
-    console.log(projects.data.items);
     const posts = pageTable
       .filter((page) => page.public)
       .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-    const tagSet = new Set();
 
-    pageTable.forEach((page) => {
-      page.tags.forEach((tag) => {
-        tagSet.add(tag);
-      });
-    });
-
-    const tagList = Array.from(tagSet);
-    return { posts, projects: projects.data.items, tagList };
+    return { posts, projects: projects.data.items };
   },
 };
 </script>
