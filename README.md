@@ -12,7 +12,8 @@ https://xyu.house/
 ### User Interface Features
 - 🌤️ Dark/light mode support. 
 - 📖 Renders blogs directly from Notion.
-- 🔎 Search and tag functionality for blogs.
+- 🔎 Search function for blogs.
+- 🏷 tag and category filter function for blogs.
 - 💻 Displays Github projects.
 - 📫 Brief contact form.
 - 👧 Cute live2D character with EN, ZH, JP support.
