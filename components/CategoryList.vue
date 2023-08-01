@@ -10,16 +10,16 @@
       <span
         class="font-semibold mr-5 mb-5 inline-block dark:text-white cursor-pointer"
         @click="showAllPosts"
-        >All Tags:</span
+        >All Categories:</span
       >
       <br />
       <span
-        v-for="tag in tagList"
-        :key="tag"
-        @click="filterPostsByTag(tag)"
-        class="font-semibold mb-1 inline-block text-gray-600 bg-opacity-25 dark:bg-opacity-10 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-2 py-1 mr-2"
+        v-for="category in categoryList"
+        :key="category"
+        @click="filterPostsByCategory(category)"
+        class="font-semibold mb-1 inline-block text-gray-600 bg-opacity-25 dark:bg-opacity-30 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-2 py-1 mr-2 cursor-pointer"
       >
-        <a href="#">#{{ tag }} </a>
+        <span>{{ category }} </span>
       </span>
     </div>
   </div>
@@ -32,7 +32,7 @@ export default {
       type: String,
       default: "",
     },
-    tagList: {
+    categoryList: {
       type: Array,
       default() {
         return [];
@@ -40,8 +40,8 @@ export default {
     },
   },
   methods: {
-    filterPostsByTag(tag) {
-      this.$emit("postsFiltered", tag);
+    filterPostsByCategory(category) {
+      this.$emit("postsFiltered", category);
     },
     showAllPosts() {
       this.$emit("showAllPosts");

@@ -47,9 +47,16 @@
             </p>
             <div class="flex flex-col justify-between max-w-lg mx-auto"></div>
             <span
+              v-for="category of post.categories"
+              :key="category"
+              class="font-semibold text-gray-600 bg-opacity-25 dark:bg-opacity-30 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-2 py-1 mr-2 inline-block mt-1.5"
+            >
+              {{ category }}
+            </span>
+            <span
               v-for="tag of post.tags"
               :key="tag"
-              class="font-semibold text-gray-600 bg-opacity-25 dark:bg-opacity-40 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-2 py-1 mr-2 inline-block mt-1.5"
+              class="font-semibold text-gray-600 bg-opacity-25 dark:bg-opacity-10 dark:text-gray-300 text-sm rounded bg-gray-200 dark:bg-primary mr-1 px-2 py-1 mr-2 inline-block mt-1.5"
             >
               #{{ tag }}
             </span>
@@ -74,8 +81,6 @@
     >
       more blogs>
     </nuxt-link>
-
-    <TagList v-if="showDetail" :tagList="tagList" />
 
     <nav v-if="showDetail" class="wrapper-small my-5">
       <ul class="inline-flex items-center -space-x-px">
@@ -138,6 +143,19 @@
         </li>
       </ul>
     </nav>
+    <CategoryList
+      v-if="showDetail"
+      :categoryList="categoryList"
+      @postsFiltered="updatePostsByCategory"
+      @showAllPosts="showAllPosts"
+    />
+
+    <TagList
+      v-if="showDetail"
+      :tagList="tagList"
+      @postsFiltered="updatePostsByTag"
+      @showAllPosts="showAllPosts"
+    />
   </div>
 </template>
 
@@ -164,24 +182,44 @@ export default {
         return [];
       },
     },
+    categoryList: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
   },
   data() {
     return {
+      originalPosts: [],
+      filteredPosts: this.posts,
       currentPage: 1,
       postsPerPage: 5,
       maxVisiblePages: 10,
     };
   },
+  created() {
+    this.originalPosts = [...this.posts];
+  },
+  watch: {
+    posts: {
+      handler(newValue) {
+        this.originalPosts = [...newValue];
+        this.filteredPosts = [...newValue];
+      },
+      immediate: true,
+    },
+  },
   computed: {
     // Calculate the total number of pages
     totalPages() {
-      return Math.ceil(this.posts.length / this.postsPerPage);
+      return Math.ceil(this.filteredPosts.length / this.postsPerPage);
     },
     // Return only the posts for the current page
     paginatedPosts() {
       const start = (this.currentPage - 1) * this.postsPerPage;
       const end = start + this.postsPerPage;
-      return this.posts.slice(start, end);
+      return this.filteredPosts.slice(start, end);
     },
     visiblePageNumbers() {
       let start = this.currentPage - Math.floor(this.maxVisiblePages / 2);
@@ -220,6 +258,22 @@ export default {
       if (this.currentPage > 1) {
         this.currentPage--;
       }
+    },
+    showAllPosts() {
+      this.filteredPosts = [...this.originalPosts];
+      this.currentPage = 1;
+    },
+    updatePostsByTag(tag) {
+      this.filteredPosts = this.originalPosts.filter((post) =>
+        post.tags.includes(tag)
+      );
+      this.currentPage = 1;
+    },
+    updatePostsByCategory(category) {
+      this.filteredPosts = this.originalPosts.filter((post) =>
+        post.categories.includes(category)
+      );
+      this.currentPage = 1;
     },
   },
 };
