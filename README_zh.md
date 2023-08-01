@@ -69,6 +69,11 @@ DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
 
 ## 安装依赖
 ```
+node: v14.18.1
+yarn: 1.22.19
+```
+
+```
 $ yarn install
 ```
 
