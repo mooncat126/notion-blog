@@ -13,7 +13,7 @@ https://xyu.house/
 - 🌤️ Dark/light mode support. 
 - 📖 Renders blogs directly from Notion.
 - 🔎 Search function for blogs.
-- 🏷 tag and category filter function for blogs.
+- 🏷 Tag and category filter function for blogs.
 - 💻 Displays Github projects.
 - 📫 Brief contact form.
 - 👧 Cute live2D character with EN, ZH, JP support.
