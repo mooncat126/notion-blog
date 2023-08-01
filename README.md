@@ -7,6 +7,10 @@ Deploy to netlify.
 ## Preview
 https://xyu.house/
 
+<a href="https://xyu.house/">
+    <img src="https://github.com/mooncat126/notion-blog/assets/112956463/48b114bd-cdf5-4842-8f61-6eb5f56b44ba" alt="xyu house_ (3)" width="500">
+</a>
+
 ## Features
 
 ### User Interface Features
