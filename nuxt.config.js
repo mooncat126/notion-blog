@@ -6,6 +6,28 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: process.env.GITHUB_USERNAME,
+    script: [
+      {
+        hid: 'google-analytics',
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-9SV57ZYGVL',
+        async: true
+      },
+      {
+        hid: 'gtag-init',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-9SV57ZYGVL');
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script'],
+    render: {
+      csp: true
+    },
     htmlAttrs: {
       lang: 'en'
     },
@@ -77,7 +99,6 @@ export default {
     routes: async () => {
       const notion = require('vue-notion')
       const pageTable = await notion.getPageTable(process.env.NOTION_TABLE_ID)
-      // console.log(pageTable)
       return pageTable.filter((item) => !!item.public).map((item) => `/posts/${item.slug}`)
     }
   },
