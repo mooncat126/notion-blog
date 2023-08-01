@@ -70,6 +70,11 @@ DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
 then you can try to run it. 
 ## install dependencies
 ```
+node: v14.18.1
+yarn: 1.22.19
+```
+
+```
 $ yarn install
 ```
 
