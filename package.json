@@ -7,33 +7,46 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "test": "jest",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
+    "@babel/plugin-proposal-async-generator-functions": "^7.20.7",
+    "@babel/plugin-proposal-class-static-block": "^7.21.0",
     "@nuxtjs/color-mode": "^2.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@vue/babel-preset-app": "^5.0.8",
     "core-js": "^3.15.2",
     "encoding": "^0.1.13",
     "fuse.js": "^6.6.2",
+    "lodash": "^4.17.21",
     "nuxt": "^2.15.7",
-    "prismjs": "^1.29.0"
+    "prismjs": "^1.29.0",
+    "vue-analytics": "^5.22.1"
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@babel/eslint-parser": "^7.15.4",
+    "@babel/preset-env": "^7.22.9",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/babel-preset-app": "^0.8.0",
     "@nuxtjs/eslint-config": "^7.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/google-analytics": "^2.4.0",
     "@nuxtjs/tailwindcss": "^4.2.1",
+    "@vue/test-utils": "^2.4.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^29.6.1",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^7.12.1",
+    "jest": "^29.6.1",
     "postcss": "^8.4.6",
     "prettier": "^2.4.1",
+    "vue-jest": "^5.0.0-alpha.10",
     "vue-notion": "^1.5.1"
   }
 }
