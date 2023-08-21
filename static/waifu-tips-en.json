@@ -116,7 +116,11 @@
     },
     {
       "selector": "#allTags",
-      "text": ["These are the categories of all articles..."]
+      "text": ["These are the tags of all articles, you can click to filter articles"]
+    },
+    {
+      "selector": "#allCategories",
+      "text": ["These are the categories of all articles, you can click to filter articles"]
     },
     {
       "selector": "#moreGithub",

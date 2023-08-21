@@ -34,9 +34,7 @@
     {
       "selector": "#about",
       "text": [
-        "你想知道我家主人是谁吗？",
-        "这里有一些关于我家主人的秘密哦、要不要看看呢？",
-        "恭喜你发现主人出没地点！"
+        "恭喜你发现我的出没地点！"
       ]
     },
     {
@@ -49,7 +47,7 @@
 	  },
     {
       "selector": ".site-author",
-      "text": ["我家主人好看吗？", "这是我家主人(*´∇｀*)"]
+      "text": ["(*´∇｀*)"]
     },
     {
       "selector": ".cc-opacity, .post-copyright-author",
@@ -61,7 +59,7 @@
     },
     {
       "selector": ".links-of-author",
-      "text": ["这里是主人的常驻地址哦。", "这里有主人的联系方式！"]
+      "text": ["这里是我常驻地址哦。", "这里有我的联系方式！"]
     },
     {
       "selector": "#contact-submit",
@@ -103,7 +101,11 @@
     },
 	{
 		"selector": "#allTags",
-		"text": ["这里是所有文章的tag分类..."]
+		"text": ["这里是所有文章的标签分类.点击可以搜索该标签的文章哦.."]
+	},
+  {
+		"selector": "#allCategories",
+		"text": ["这里是所有文章的分类.点击可以搜索该分类的文章哦.."]
 	},
 	{
 		"selector": "#moreGithub",
@@ -111,7 +113,7 @@
 	},
 	{
 		"selector": "#Twitter",
-		"text": ["瞧瞧你...发现了主人的Twitter", "去加个Twitter好友呗〜"]
+		"text": ["瞧瞧你...发现了我的Twitter", "去加个Twitter好友呗〜"]
 	},
     {
       "selector": "#nextPage",
@@ -137,7 +139,7 @@
       "text": [
         "写信告诉我〜今夜你想要梦什么〜",
         "想要说点什么吗？",
-        "觉得博客不错？快来留言和主人交流吧！"
+        "觉得博客不错？快来留言吧！"
       ]
     },
     {
@@ -155,7 +157,7 @@
     },
     {
       "selector": "a[rel='github_content']",
-      "text": ["嘿。去我主人的Github逛逛吗?"]
+      "text": ["嘿。去我的Github逛逛吗?"]
     }
   ],
   "click": [
@@ -222,7 +224,7 @@
     },
     {
       "date": "12/20-12/31",
-      "text": "这几天是<span>圣诞节</span>、主人肯定又去剁手买买买了～"
+      "text": "这几天是<span>圣诞节</span>、剁手买买买了～"
     }
   ],
   "time": [
