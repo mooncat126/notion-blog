@@ -1,11 +1,25 @@
 <template>
   <div class="mt-0">
-    <SearchInput v-if="showDetail" class="wrapper-small" :posts="posts" />
+    <SearchInput v-if="showDetail" :posts="posts" />
     <div
-      class="flex justify-center items-center text-base font-semibold text-gray-600 my-10 dark:text-gray-300"
+      class="flex justify-center items-center text-base font-semibold text-gray-600 mt-10 dark:text-gray-300"
     >
       <h2 class="text-center text-xl">{{ title }}</h2>
     </div>
+
+    <CategoryList
+      v-if="showDetail"
+      :categoryList="categoryList"
+      @postsFiltered="updatePostsByCategory"
+      @showAllPosts="showAllPosts"
+    />
+
+    <TagList
+      v-if="showDetail"
+      :tagList="tagList"
+      @postsFiltered="updatePostsByTag"
+      @showAllPosts="showAllPosts"
+    />
 
     <div class="wrapper-small my-5">
       <div
@@ -14,11 +28,11 @@
         class="project-card flex flex-col md:flex-row mt-10"
       >
         <div class="img md:w-1/3 lg:w-1/2 md:pr-4 lg:pr-8 mb-4">
-          <nuxt-link :to="`/posts/${post.slug}`">
+          <NuxtLink v-if="post" :to="`/posts/${post.slug}`">
             <div class="relative group rounded-xl overflow-hidden h-img w-full">
               <img
                 :alt="post.title"
-                :src="`${post.thumbnail[0].url}`"
+                :src="`${post.thumbnail[0]?.url}`"
                 class="object-cover object-center h-full w-full"
               />
               <div
@@ -31,17 +45,17 @@
                 </p>
               </div>
             </div>
-          </nuxt-link>
+          </NuxtLink>
         </div>
         <div class="flex flex-col justify-between md:w-2/3 lg:w-1/2">
           <div class="txt px-0 md:px-5 lg:px-0">
-            <nuxt-link :to="`/posts/${post.slug}`">
+            <NuxtLink :to="`/posts/${post.slug}`">
               <h2
                 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4 lg:min-w-[500px]"
               >
                 {{ post.title }}
               </h2>
-            </nuxt-link>
+            </NuxtLink>
             <p class="font-semibold text-gray-600 dark:text-gray-300 text-sm">
               {{ formatDate(post.created_at) }}
             </p>
@@ -63,24 +77,24 @@
             <p class="text-base text-gray-700 dark:text-gray-200 my-4">
               {{ post.description }}
             </p>
-            <nuxt-link
+            <NuxtLink
               :to="`/posts/${post.slug}`"
               class="text-base font-semibold text-gray-700 dark:text-gray-200 my-3 hover:text-primary"
             >
               Read more >
-            </nuxt-link>
+            </NuxtLink>
           </div>
         </div>
       </div>
+      <NuxtLink
+        id="moreBlogs"
+        v-if="!showDetail"
+        to="/posts"
+        class="text-xl text-base font-semibold text-gray-700 dark:text-gray-200 my-3 hover:text-primary"
+      >
+        more blogs>
+      </NuxtLink>
     </div>
-    <nuxt-link
-      id="moreBlogs"
-      v-if="!showDetail"
-      :to="`/posts`"
-      class="wrapper-small text-xl text-base font-semibold text-gray-700 dark:text-gray-200 my-3 hover:text-primary"
-    >
-      more blogs>
-    </nuxt-link>
 
     <nav v-if="showDetail" class="wrapper-small my-5">
       <ul class="inline-flex items-center -space-x-px">
@@ -143,19 +157,6 @@
         </li>
       </ul>
     </nav>
-    <CategoryList
-      v-if="showDetail"
-      :categoryList="categoryList"
-      @postsFiltered="updatePostsByCategory"
-      @showAllPosts="showAllPosts"
-    />
-
-    <TagList
-      v-if="showDetail"
-      :tagList="tagList"
-      @postsFiltered="updatePostsByTag"
-      @showAllPosts="showAllPosts"
-    />
   </div>
 </template>
 

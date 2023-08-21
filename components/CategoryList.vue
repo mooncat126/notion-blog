@@ -1,14 +1,14 @@
 <template>
-  <div class="mt-10 mb-10">
+  <div class="mb-5">
     <div
       class="flex justify-center items-center text-base font-semibold text-gray-600 dark:text-gray-300"
     >
       <h2 class="text-center text-lg">{{ title }}</h2>
     </div>
 
-    <div id="allTags" class="wrapper-small my-5">
+    <div id="allCategories" class="wrapper-small my-5">
       <span
-        class="font-semibold mr-5 mb-5 inline-block dark:text-white cursor-pointer"
+        class="font-semibold mr-5 mb-2 inline-block dark:text-white cursor-pointer"
         @click="showAllPosts"
         >All Categories:</span
       >
