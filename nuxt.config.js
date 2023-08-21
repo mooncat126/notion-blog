@@ -2,29 +2,16 @@ export default {
   ssr: true,
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-
+  generate: {
+    routes: async () => {
+      const notion = require('vue-notion')
+      const pageTable = await notion.getPageTable(process.env.NOTION_TABLE_ID)
+      return pageTable.filter((item) => !!item.public).map((item) => `/posts/${item.slug}`)
+    }
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: process.env.GITHUB_USERNAME,
-    script: [
-      {
-        hid: 'google-analytics',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-9SV57ZYGVL',
-        async: true
-      },
-      {
-        hid: 'gtag-init',
-        innerHTML: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-9SV57ZYGVL');
-        `,
-        type: 'text/javascript',
-        charset: 'utf-8'
-      }
-    ],
-    __dangerouslyDisableSanitizers: ['script'],
+    title: process.env.DEV_NAME,
     render: {
       csp: true
     },
@@ -53,8 +40,25 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: '/live2d.js', body: true }
-    ]
+      { src: '/live2d.js', body: true },
+      {
+        hid: 'google-analytics',
+        src: `https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_ANALYTICS_ID}`,
+        async: true
+      },
+      {
+        hid: 'gtag-init',
+        innerHTML: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ${process.env.GOOGLE_ANALYTICS_ID});
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['script'],
   },
 
   css: [],
@@ -84,6 +88,12 @@ export default {
   ],
 
   build: {},
+  render: {
+    resourceHints: false,
+    html: {
+      minify: false
+    }
+  },
   colorMode: {
     preference: 'dark',
     classSuffix: ''
@@ -102,15 +112,12 @@ export default {
       return pageTable.filter((item) => !!item.public).map((item) => `/posts/${item.slug}`)
     }
   },
-
-  // Google Analytics Configuration: https://google-analytics.nuxtjs.org
-  googleAnalytics: {
-    id: process.env.GOOGLE_ANALYTICS_ID,
-  },
-
   publicRuntimeConfig: {
     baseURL: process.env.BASE_URL,
     githubUsername: process.env.GITHUB_USERNAME,
+    commentClientId: process.env.COMMENT_CLIENT_ID,
+    commentClientSecrets: process.env.COMMENT_CLIENT_SECRETS,
+    commentRepo: process.env.COMMENT_REPO,
     notionTableId: process.env.NOTION_TABLE_ID,
     notionAboutPageId: process.env.NOTION_ABOUT_PAGE_ID,
     devName: process.env.DEV_NAME,
