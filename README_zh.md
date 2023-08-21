@@ -18,6 +18,7 @@ https://xyu.house/
 - 📖 直接从Notion渲染博客
 - 🔎 博文内容的搜索功能。
 - 🏷 博文标签和分类的搜索功能
+- 📝 基于Gitalk的博客评论功能
 - 💻 Github项目展示
 - 📫 简洁的联系表单
 - 👧 支持EN，ZH，JP三语的可爱live2D角色
