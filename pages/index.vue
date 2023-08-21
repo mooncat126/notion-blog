@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper-small md:px-10">
+  <div class="px-2 sm:px-10">
     <SearchInput :posts="posts" />
 
     <div class="h-60 mt-5">

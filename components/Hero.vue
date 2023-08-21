@@ -8,7 +8,7 @@
         <span class="text-blue-600 dark:text-blue-500">{{
           $config.devName
         }}</span>
-        <p>A Chinese {{ $config.devRole }} .</p>
+        <p>A Chinese {{ $config.devRole }}</p>
       </h1>
       <p
         class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"

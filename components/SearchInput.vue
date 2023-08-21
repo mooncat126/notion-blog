@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="search" ref="searchBox">
+    <div id="search" class="wrapper" ref="searchBox">
       <label
         class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
         >Search</label
