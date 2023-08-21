@@ -1,18 +1,25 @@
 [English](README.md) | [中文](README_zh.md)
 
 # notion-blog
-This is an example Next.js project that shows Nuxt.js' support using Notion's private API for a backend.
+This is an example Next.js project that shows Nuxt.js' support 
+using Notion's private API for a backend.
 Deploy to netlify.
 
 ## Preview
 https://xyu.house/
+
+<a href="https://xyu.house/">
+    <img src="https://github.com/mooncat126/notion-blog/assets/112956463/48b114bd-cdf5-4842-8f61-6eb5f56b44ba" alt="xyu house_ (3)" width="500">
+</a>
 
 ## Features
 
 ### User Interface Features
 - 🌤️ Dark/light mode support. 
 - 📖 Renders blogs directly from Notion.
-- 🔎 Search and tag functionality for blogs.
+- 🔎 Search function for blogs.
+- 🏷 Tag and category filter function for blogs.
+- 📝 Gitalk blog comment function.
 - 💻 Displays Github projects.
 - 📫 Brief contact form.
 - 👧 Cute live2D character with EN, ZH, JP support.
@@ -64,6 +71,11 @@ DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
 
 then you can try to run it. 
 ## install dependencies
+```
+node: v14.18.1
+yarn: 1.22.19
+```
+
 ```
 $ yarn install
 ```

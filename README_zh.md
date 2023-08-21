@@ -7,15 +7,21 @@
 ## 预览
 https://xyu.house/
 
+<a href="https://xyu.house/">
+    <img src="https://github.com/mooncat126/notion-blog/assets/112956463/48b114bd-cdf5-4842-8f61-6eb5f56b44ba" alt="xyu house_ (3)" width="500">
+</a>
+
 ## 特性
 
 ### 用户界面特性
-- 🌤️ 支持日/夜切换模式。
-- 📖 直接从Notion渲染博客。
-- 🔎 博客的搜索和标签功能。
-- 💻 展示Github项目。
-- 📫 简洁的联系表单。
-- 👧 支持EN，ZH，JP的可爱live2D角色。
+- 🌤️ 支持日/夜切换模式
+- 📖 直接从Notion渲染博客
+- 🔎 博文内容的搜索功能。
+- 🏷 博文标签和分类的搜索功能
+- 📝 基于Gitalk的博客评论功能
+- 💻 Github项目展示
+- 📫 简洁的联系表单
+- 👧 支持EN，ZH，JP三语的可爱live2D角色
 
 ### 技术和设计特性
 - 清爽，极简的UI设计。
@@ -63,6 +69,11 @@ DEV_LINKEDIN_LINK=<your_dev_linkedin_link>
 然后你可以尝试运下面的步骤运行它。
 
 ## 安装依赖
+```
+node: v14.18.1
+yarn: 1.22.19
+```
+
 ```
 $ yarn install
 ```
