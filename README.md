@@ -19,6 +19,7 @@ https://xyu.house/
 - 📖 Renders blogs directly from Notion.
 - 🔎 Search function for blogs.
 - 🏷 Tag and category filter function for blogs.
+- 📝 Gitalk blog comment function.
 - 💻 Displays Github projects.
 - 📫 Brief contact form.
 - 👧 Cute live2D character with EN, ZH, JP support.
